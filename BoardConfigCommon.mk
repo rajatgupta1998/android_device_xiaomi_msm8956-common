@@ -215,6 +215,7 @@ TARGET_RIL_VARIANT := caf
 # SELinux
 #include device/qcom/sepolicy/sepolicy.mk
 #BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
+SELINUX_IGNORE_NEVERALLOWS := true
 
 # Wifi
 WPA_SUPPLICANT_VERSION      := VER_0_8_X
