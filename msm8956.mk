@@ -381,6 +381,15 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl
 
+# VR
+PRODUCT_PACKAGES += \
+    android.hardware.vr@1.0-impl \
+    android.hardware.vr@1.0-service \
+    vr.msm8952
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.vr.high_performance.xml:system/etc/permissions/android.hardware.vr.high_performance.xml
+
 # Widevine
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-service.widevine
