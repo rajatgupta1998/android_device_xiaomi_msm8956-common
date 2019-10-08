@@ -48,8 +48,6 @@ static int open_lircdev(void)
 static int consumerir_transmit(struct consumerir_device *dev __unused,
    int carrier_freq, const int pattern[], int pattern_len)
 {
-    int total_time = 0;
-    long i;
     int fd;
     int rc;
     char value[PROPERTY_VALUE_MAX] = {'\0'};
